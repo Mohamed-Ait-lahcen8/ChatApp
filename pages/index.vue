@@ -62,7 +62,7 @@ const login = async () => {
     try {
         await signInWithEmailAndPassword(auth, email.value, password.value)
         err.value = null
-        router.push("/dashboard")
+        router.push("/chats")
     } catch (error) {
         err.value = error.message
     }

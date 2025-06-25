@@ -114,7 +114,7 @@ const google = async() => {
             })
         }
         err.value = null
-        router.push('/dashboard')
+        router.push('/chats')
     } catch(error) {
         err.value = error.message
     }

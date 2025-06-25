@@ -55,6 +55,8 @@ import { database } from '~/firebase'
 import { ref as dbRef, onValue, set, get } from 'firebase/database'
 import { formatDistanceToNow, format, isToday, isThisWeek } from 'date-fns'
 import { ref as vueRef, nextTick } from 'vue'
+
+
 const {user, initAuth} = useAuth()
 const userId = computed(() => user.value && user.value.uid)
 const route = useRoute()
