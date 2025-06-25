@@ -37,4 +37,19 @@ import ChatSidebar from '~/components/ChatSidebar.vue'
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  .chat-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    height: 100vh;
+  }
+  .main-content {
+    display: none !important;
+  }
+}
 </style> 
